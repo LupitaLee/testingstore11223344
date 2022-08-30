@@ -10,7 +10,7 @@
     "16618242047c6180af": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{ page.title}}",
+        "custom_liquid": "{{ 'test github' }}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
