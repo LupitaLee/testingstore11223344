@@ -16,16 +16,33 @@
         "padding_bottom": 52
       }
     },
+<<<<<<< HEAD
     "1661955965c562ee2a": {
       "type": "liquid-ref",
       "settings": {
         "liquid-ref": "a custom theme from shopify backend"
+=======
+    "1661956112cc9b9eaf": {
+      "type": "liquid-ref",
+      "settings": {
+        "liquid-ref": "liquid reference",
+        "liquid-checkbox": false,
+        "liquid-number": 53,
+        "liquid-radio": "option-1",
+        "liquid-range": 12,
+        "liquid-select": "option-2",
+        "liquid-textarea": "type something"
+>>>>>>> a3f4ebe (test input setting)
       }
     }
   },
   "order": [
     "main",
     "16618242047c6180af",
+<<<<<<< HEAD
     "1661955965c562ee2a"
+=======
+    "1661956112cc9b9eaf"
+>>>>>>> a3f4ebe (test input setting)
   ]
 }
