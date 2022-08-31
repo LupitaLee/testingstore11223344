@@ -5,11 +5,22 @@
       "settings": {
         "title": "Collections",
         "sort": "alphabetical",
-        "image_ratio": "square"
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "1661987863e80b21da": {
+      "type": "call-to-action",
+      "settings": {
+        "text-box": "Title",
+        "link": "",
+        "linktext": "Click here"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1661987863e80b21da"
   ]
 }
