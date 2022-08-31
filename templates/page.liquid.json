@@ -16,7 +16,10 @@
         "padding_bottom": 52
       }
     },
+<<<<<<< HEAD
 
+=======
+>>>>>>> a3f4ebeced30a75fc433bfc5d19f0394b677f6e5
     "1661956112cc9b9eaf": {
       "type": "liquid-ref",
       "settings": {
@@ -27,15 +30,22 @@
         "liquid-range": 12,
         "liquid-select": "option-2",
         "liquid-textarea": "type something"
+<<<<<<< HEAD
 
+=======
+>>>>>>> a3f4ebeced30a75fc433bfc5d19f0394b677f6e5
       }
     }
   },
   "order": [
     "main",
     "16618242047c6180af",
+<<<<<<< HEAD
 
     "1661956112cc9b9eaf"
 
+=======
+    "1661956112cc9b9eaf"
+>>>>>>> a3f4ebeced30a75fc433bfc5d19f0394b677f6e5
   ]
 }
