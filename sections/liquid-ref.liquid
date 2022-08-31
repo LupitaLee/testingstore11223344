@@ -1,6 +1,58 @@
-<h1>this works in both directions </h1>
+<!-- text -->
+<h1> text </h1>
+
+<h1>{{ section.settings.liquid-ref }} </h1>
+
+<br/>
+
+
+
+<!-- 
+checkbox -->
+<h1> checkbox </h1>
+
+{% if section.settings.liquid-checkbox == true%}
+     Checkbox is checked
+    {% else %} 
+    Checkbox is NOT  checked
+   {% endif %} 
+
+   <br/>
+<!-- number -->
+<h1> number </h1>
+
+{% if section.settings.liquid-number > 0 %}
+    {{ section.settings.liquid-number }}
+{% endif %}
+<br/>
+
+<h1> radio </h1>
+{% if section.settings.liquid-radio == "option-1" %}
+    Option 1 selected 
+    {% else %}
+        Option 2 selected
+{% endif %}
+
+<br/>
+<br/>
+
+<h1> range </h1>
+{{ section.settings.liquid-range }}
+
+<br/>
+
+<h1> select  </h1>
+{{ section.settings.liquid-select }}
+
+<br/>
+<br/>
+<h1> text area </h1>
+{{ section.settings.liquid-textarea }}
+
+<br/>
 
 {% schema %}
+
 {
     "name": "liquid reference ",
     "settings": [
@@ -8,7 +60,74 @@
             "id": "liquid-ref",
             "type": "text",
             "label":  "A Reference for Shopify Liquid" 
-        }
+        },
+
+        {
+            "id": "liquid-checkbox",
+            "type": "checkbox",
+            "label":  "A checkbox in Liquid" 
+        },
+
+        {
+            "id": "liquid-number",
+            "type": "number",
+            "label":  "Add a number" 
+        },
+        {
+            "id": "liquid-radio",
+            "type": "radio",
+            "label":  "Add a radio button" ,
+            "options": [
+            {
+              "value": "option-1",
+              "label": "Option-1"
+            },
+            {
+              "value": "option-2",
+              "label": "Option-2"
+            }
+          ],
+          "default": "option-1"
+        },
+
+        {
+            "id": "liquid-range",
+            "label":  "Range" ,
+            "type": "range",
+            "min": 2,
+            "max": 12,
+            "step": 2,
+            
+            "default": 6
+        },
+
+        {
+            "type": "select",
+            "id": "liquid-select",
+            "label": "Select",
+            "options": [
+              {
+                "value": "option-1",
+                "label": "option-1"
+              },
+              {
+                "value": "option-2",
+                "label": "option-2"
+              },
+              {
+                "value": "option-3",
+                "label": "option-3"
+              }
+            ],
+            "default": "option-2"
+          },
+          {
+            "type": "textarea",
+            "id": "liquid-textarea",
+            "label": "Welcome message - text area",
+            "default": "type something "
+          }
+
     ],
     
     "presets": [
